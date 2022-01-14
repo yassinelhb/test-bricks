@@ -10,6 +10,7 @@ import { useAuth } from "../hooks/useAuth";
 import { LoginRequest, RequestError } from "../types";
 import { useLoginMutation } from "../services/authApi";
 import { setCredentials } from "../store/reducers/authSlice";
+import Bricks from "../components/bricks/Bricks";
 
 const schema = yup.object().shape({ email: yup.string().required("Email est obligatoire"), password: yup.string().required("Mot de passe est obligatoire") });
 
@@ -41,7 +42,7 @@ const Login = () => {
   };
 
   return (<Layout title="Se connecter">
-    <div className="md:bg-none bg-[url('/images/background.png')] bg-no-repeat bg-right h-screen">
+    <div className="lg:bg-none bg-[url('/images/background.png')] bg-no-repeat bg-right h-screen">
       <div className="max-w-[1200px] mx-auto flex justify-between lg:justify-center">
         <div className="xs:w-full w-103.75">
           <div className="flex items-center justify-between py-7.5 mb-12.5 xs:bg-white xs:px-4">
@@ -126,6 +127,9 @@ const Login = () => {
             </form>
           </div>
         </div>
+        <div className="absolute top-0 right-0 bottom-0 overflow-hidden lg:hidden">
+            <Bricks />
+          </div>
       </div>
     </div>
   </Layout>);
