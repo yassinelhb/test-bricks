@@ -24,6 +24,15 @@ export type TLayout = {
   children: any;
 };
 
+export interface IBrick {
+  image: string;
+  title: string;
+  stat: string;
+  range: number;
+  rangeText: string;
+  rangeText2?: string;
+}
+
 export type AuthState = {
   user: User | null;
   token: string | null;
