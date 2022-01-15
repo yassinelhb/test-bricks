@@ -4,7 +4,8 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import City from '../components/city/city'
+import Biens from '../components/Biens/Biens'
+import City from '../components/city/City'
 import Layout from '../components/Layout'
 import { useAuth } from '../hooks/useAuth'
 import { useUserMutation } from '../services/authApi'
@@ -26,8 +27,9 @@ const Home: NextPage = () => {
   };
   return (
     <Layout title="Accueil">
-      <div className="max-w-[1000px] md:mx-5 mx-auto">
+      <div className="max-w-[1000px] sm:mx-5 md:mx-5 mx-auto">
         <City />
+        <Biens/>
       </div>
     </Layout>
   )
