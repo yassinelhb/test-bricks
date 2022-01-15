@@ -42,7 +42,7 @@ const Login = () => {
   };
 
   return (<Layout title="Se connecter">
-    <div className="lg:bg-none bg-[url('/images/background.png')] bg-no-repeat bg-right h-screen">
+    <div className="lg:bg-none md:bg-none bg-[url('/images/background.png')] bg-no-repeat bg-right h-screen">
       <div className="max-w-[1200px] mx-auto flex justify-between lg:justify-center">
         <div className="xs:w-full w-103.75">
           <div className="flex items-center justify-between py-7.5 mb-12.5 xs:bg-white xs:px-4">

@@ -41,6 +41,21 @@ export interface ICity {
   statValue: string;
 }
 
+
+export interface IBiens {
+  title: string;
+  image: string;
+  rendement: string;
+  reverses: string;
+  type: "buying" | "selling" | "cancel" | "offre" | "default";
+  score?: number;
+  sansCredit?: boolean;
+  nbInvestors?: number;
+  nbFunded?: number;
+  nbOffre?: number;
+}
+
+
 export type AuthState = {
   user: User | null;
   token: string | null;
