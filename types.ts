@@ -33,6 +33,14 @@ export interface IBrick {
   rangeText2?: string;
 }
 
+export interface ICity {
+  title: string;
+  description: string;
+  image: string;
+  statText: string;
+  statValue: string;
+}
+
 export type AuthState = {
   user: User | null;
   token: string | null;
